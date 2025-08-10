@@ -550,6 +550,7 @@ fn get_sample_text() -> String {
     t.to_string()
 }
 
+// TODO: This test fails and needs further investigation.
 #[test]
 fn test_batch_size_does_not_change_output() {
     let mut model = TextEmbedding::try_new(

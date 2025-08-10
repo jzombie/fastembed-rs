@@ -184,6 +184,16 @@ println!("Rerank result: {:?}", results);
 
 Alternatively, local model files can be used for inference via the `try_new_from_user_defined(...)` methods of respective structs.
 
+## Testing
+
+If tests fail due to "file contention" or "lock acquisition" errors, it means they are conflicting over shared resources. You can resolve this by running the tests serially.
+
+```sh
+Test sequentially in order to prevent file contention issues.
+
+cargo test -- --test-threads=1
+```
+
 ## 📄 LICENSE
 
 [Apache 2.0](https://github.com/Anush008/fastembed-rs/blob/main/LICENSE)
