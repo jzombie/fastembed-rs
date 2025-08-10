@@ -95,3 +95,6 @@ pub use crate::reranking::{
     OnnxSource, RerankInitOptions, RerankInitOptionsUserDefined, RerankResult, TextRerank,
     UserDefinedRerankingModel,
 };
+
+// TODO: Just prototyping; enable with feature flag?
+pub use ort::execution_providers::CoreMLExecutionProvider;
