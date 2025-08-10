@@ -73,7 +73,7 @@ tests/rustdoc-gui/src/**.lock
 .fastembed_cache
 
 ## Rust files
-main.rs
+# main.rs TODO: Uncomment
 Cargo.lock
 
 ## Nix
