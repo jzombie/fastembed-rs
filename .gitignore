@@ -78,3 +78,6 @@ Cargo.lock
 
 ## Nix
 /.direnv
+
+# Globcat.sh files (https://github.com/jzombie)
+out.txt
